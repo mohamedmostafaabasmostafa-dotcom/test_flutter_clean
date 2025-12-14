@@ -1,0 +1,13 @@
+تشغيل وضع الصيانة:
+update public.app_config
+set maintenance_mode = true,
+    maintenance_force = true,
+    maintenance_message = 'التطبيق تحت الصيانة الآن، هنرجع قريبًا',
+    maintenance_url = '#'
+where platform = 'all';
+
+
+ايقاف الوضع:
+update public.app_config
+set maintenance_mode = false
+where platform = 'all';
