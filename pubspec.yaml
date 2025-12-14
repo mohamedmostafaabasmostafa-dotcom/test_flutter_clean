@@ -45,7 +45,7 @@ flutter:
 
 flutter_launcher_icons:
   android: true
-  ios: false
+  ios: true
 
   # Android 12+ Adaptive Icon (حل مشكلة ظهور الروبوت الافتراضي)
   adaptive_icon_foreground: "assets/logo/logo.png"
